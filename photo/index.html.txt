@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #fefbd8;
+            padding: 50px;
+            margin: 0;
+            color: #333;
+        }
+        h1 {
+            color: #ff1493;
+            font-size: 3em;
+        }
+        p {
+            font-size: 1.5em;
+            margin: 20px 0;
+        }
+        .container {
+            display: inline-block;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .birthday-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        audio {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Selamat Ulang Tahun!</h1>
+        <img src="https://example.com/path/to/your/happy_birthday_image.jpg" alt="Selamat Ulang Tahun" class="birthday-image">
+        <p>Semoga hari ini penuh kebahagiaan dan kesenangan!</p>
+        <audio id="birthdaySong" src="https://example.com/path/to/your/birthday_song.mp3" autoplay></audio>
+    </div>
+
+    <script>
+        window.onload = function() {
+            var audio = document.getElementById('birthdaySong');
+            audio.play().catch(function(error) {
+                console.log('Audio tidak dapat diputar: ', error);
+            });
+        };
+    </script>
+</body>
+</html>
